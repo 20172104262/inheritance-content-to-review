@@ -15,8 +15,8 @@ public:
 	~Cfeet();
 	Cfeet(int i, int j);
 	void dispaly();
-	void getfeet();
-	void inches();
+	int getfeet();
+	int inches();
 };
 Cfeet::Cfeet()
 {
@@ -33,6 +33,14 @@ Cfeet::Cfeet(int i, int j)
 	feet = i;
 	inch = j;
 	cout << "基类构造函数" << feet << "英尺" << inch << "英寸" << endl;
+}
+int Cfeet::getfeet()
+{
+	return feet;
+}
+int Cfeet::inches()
+{
+	return inch;
 }
 void Cfeet::dispaly()
 {
