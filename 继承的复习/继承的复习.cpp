@@ -49,10 +49,10 @@ myCfeet::myCfeet()
 {
 	cout << "派生类默认构造函数" << feet << "英尺" << inch << "英寸" << endl;
 }
-myCfeet::myCfeet(int ti, int tj)
+myCfeet::myCfeet(int ti, int tj):Cfeet(ti,tj)
 {
-	feet = ti;
-	inch = tj;
+	//feet = ti;
+	//inch = tj;
 	cout << "派生类构造函数" << feet << "英尺" << inch << "英寸" << endl;
 }
 myCfeet::~myCfeet()
